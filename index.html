@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sho design</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="box">
+
+<div class="logo-part">
+    <img class="logo" src="img/My logo.png" alt="logo">   
+    <div class="words">
+        <div class="text">Sho design</div>
+        <div class="under-text">Creative and Innovative</div>
+    </div>
+</div>
+    <div class="link">
+        <li><a href="https://michealshodipo56.github.io/website/">Websites</a></li>
+        <li><a href="https://michealshodipo56.github.io/designs/">Graphics</a></li>
+        <li><a href="https://michealshodipo56.github.io/art/">Art</a></li>
+        <li><a href="https://michealshodipo56.github.io/games/">Games</a></li>
+    </div>
+</div>
+
+<div class="me-div">
+    <img class="me"  src="img/me.png" alt="">
+</div>
+
+<div class="section">
+    <div class="first">
+        <div class="my-name">Shodipo Micheal</div>
+        i'm a passionate web developer and graphic designer with a love for creativity. i enjoy bringing ideas to life through innovative design and engaging user expriences. in my free time i express my artistic side by drawing, exploring varous stylesand techniques. i'm exicted to share my journey and skills with you!
+    </div>
+    <br>
+    <div class="part">
+        <li><b>Date of Birth:</b> &nbsp&nbsp June 12 2006</li>
+        <li><b>Occupation:</b> &nbsp&nbsp&nbsp Web developer, Graphic designer, UI/UX dexigner, Art</li>
+        <li><b>Number:</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 07086687479</li>
+        <br>
+        <li><span class="mail"><b>Mail:</b></span>micheealshodipo56@gmail.com</li>
+    </div>
+</div>
+<br>
+<div class="social">
+    <a href="https://www.facebook.com/profile.php?id=100086548128900"><img src="img/facebook.png" alt=""></a>
+    <a href="https://www.instagram.com/michealsho_art/profilecard/?igsh=eGVpc3Yya2VlOHZw"><img src="img/instargram.webp" alt=""></a>
+    <img class="whatsapp" src="img/WhatsApp..webp" alt="">
+</div>
+<div class="scan">
+    <div class="modal"><img src="img/whatsapp QR.png" alt=""></div>
+ </div>
+<br>
+<div class="pro">
+    <button class="cvbtn">CV</button>
+</div>
+
+<div class="cv">
+    <img class="cv-img" src="img/my cv.jpg" alt="">
+</div>
+
+<div class="frame">
+
+<div class="title">Certificate</div>
+<br>
+<div class="scroll">
+    <div class="cert-div">
+        <div class="zoom">
+            <img class="certificate2" src="img/WDC.jpg" alt="">
+        </div>
+        <div class="name">Woman Development Center</div>
+        <div class="cert-text">Lagos State competency certificate <br><b>Date:</b> 9th January 2023 to 31st june 2023 <br><b>Skill:</b> Computer Studies</div>
+    </div>
+
+    <div class="cert-div">
+        <div class="zoom">
+            <img class="certificate" src="img/my certificate.jpg" alt="">
+        </div>
+        <div class="name">Steco Productions</div>
+        <div class="cert-text">certificate in Graphic designing <br><span class="bold">Date:</span> 1st august 2023 to october 31st 2023<br><span class="bold">Skill:</span> Graphic Designing</div>
+    </div>
+
+    <div class="cert-div">
+        <div class="zoom">
+            <img class="certificate3" src="img/Alison.jpg" alt="">
+        </div>
+        <div class="name">Alison</div>
+        <div class="cert-text">certificate in HTML and CSS <br><span class="bold">Date:</span> 1st October 2024<br><span class="bold">Skill:</span> HTML and CSS</div>
+    </div>
+
+</div>
+</div>
+
+<div class="popup">
+    <div class="modal"><img src="img/my certificate.jpg" alt=""></div>
+</div>
+<br>
+
+<center><h2>Visit</h2></center>
+<div class="container">
+
+    <a class="content" href="https://michealshodipo56.github.io/website/">
+        <div class="around">
+            <img src="img/website mockup.jpg" alt="">
+        </div>
+        <div class="bottom">Websites</div>
+    </a>
+
+    <a class="content" href="https://michealshodipo56.github.io/designs/">
+        <div class="around">
+            <img src="img/website6.jpg" alt="">
+        </div>
+        <div class="bottom">Graphics</div>
+    </a>
+
+    <a class="content" href="https://michealshodipo56.github.io/art/">
+        <div class="around">
+            <img src="img/website7.jpg" alt="">
+        </div>
+        <div class="bottom">Art</div>
+    </a>
+</div>
+<br>
+<div class="others">
+
+    <div class="feature">
+        <a href="https://michealshodipo56.github.io/games/"><img class="img" src="img/games.jpg" alt=""></a>
+        <div class="bottom">Games</div>
+    </div>
+
+</div>
+
+<div class="line"></div>
+
+</body>
+<script>
+    document.querySelectorAll('.zoom img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup').style.display = 'block';
+            document.querySelector('.popup img').src = image.getAttribute('src')
+        }
+});
+
+document.querySelector('.popup').onclick = () =>{
+        document.querySelector('.popup').style.display = 'none';
+    }
+
+
+
+    const cv = document.querySelector('.cv')
+    const cvbtn = document.querySelector('.cvbtn')
+    const whatsapp = document.querySelector('.whatsapp')
+    const scan = document.querySelector('.scan')
+
+    cvbtn.addEventListener('click', () => {
+        cv.classList.add('open')
+    })
+
+    cv.addEventListener('click', () => {
+        cv.classList.remove('open')
+    })
+
+    whatsapp.addEventListener('click', () => {
+        scan.classList.add('wopen')
+    })
+
+    scan.addEventListener('click', () => {
+        scan.classList.remove('wopen')
+    })
+    
+
+
+</script>
+</html>

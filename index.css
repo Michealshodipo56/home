@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.logo{
+    width: 8em;
+    animation: introload 1s ease-in-out forwards;
+    opacity: 0;
+}
+.box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.logo-part{
+    display: flex;
+    gap: 1em; 
+    align-items: center;
+    z-index: 1;
+}
+.text{
+    font-size: 3em;
+    font-weight: bold;
+}
+.link{
+    display: flex;
+    list-style: none;
+    gap: 3em;
+    padding: 1em;
+}
+.link a:hover{
+    color: blue;
+}
+.link a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffff;
+}
+.me-div{
+    width: 100%;
+}
+.me{
+    width: 30%;
+    position: absolute;
+    top: 0;
+    margin-top: 4em;
+    right: 0;
+    margin-right: 3em;
+    animation: introload 1s ease-in-out forwards;
+    opacity: 0;
+}
+.first{
+    width: 65%;
+}
+.my-name{
+    text-align: center;
+    font-size: 2em;
+}
+.part{
+    list-style: none;
+    padding: 15px 0 0 20px;
+}
+.cert-div{
+    width: 20em;
+    height: 15em;
+    background-color: blue;
+    border-radius: 1em;
+    z-index: 100;
+    margin-left: 1em;
+}
+.name{
+    background-color: blue;
+    text-align: center;
+}
+.cert-div img{
+    width: 100%;
+    height: 13em;
+    object-fit: cover;
+}
+#zoom{
+    display: flex;
+    width: 20em;
+    height: 14em;
+    overflow: hidden;
+}
+.title{
+    font-size: 2em;
+    text-align: center;
+}
+.frame{
+    width: 60em;
+}
+.scroll{
+    overflow-x: scroll;
+    height: 26em;
+    display: flex;
+}
+.cert-text{
+    color: white;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    text-align: center;
+    border: solid white 3px;
+}
+.certificate, .certificate2, .certificate3{
+    cursor: pointer;
+}
+.bold{
+    font-weight: bold;
+}
+.mail{
+    padding-right: 5.2em;
+}
+@media only screen and (max-width: 360px) {
+    .mail{
+        display: none;
+        pointer-events: none;
+        padding-top: 1em;
+    }
+}
+
+@keyframes introload{
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.popup{
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.modal{
+    min-height: 100vh;
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.popup img{
+    width: 50%;
+}
+.open{
+    visibility: visible;
+    pointer-events: all;
+}
+.around{
+    width: 100%;
+    height: 15em;
+    overflow: hidden;
+}
+.around img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.container{
+    display: flex;
+    width: 100%;
+}
+.part{
+    font-size: 15px;
+}
+.content{
+    width: 100%;
+}
+.around img:hover{
+    transform: scale(1.1);
+}
+.bottom{
+    text-align: center;
+    color: #ffff;
+}
+.others{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.feature{
+    width: 15em;
+    height: 9em;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5em;
+}
+.pro button{
+    width: 10em;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    border: solid yellow 1px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.pro button:hover{
+    scale: 1.1;
+    background-color: yellow;
+}
+.cv{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.cv-img{
+    width: 25em;
+}
+.open{
+    visibility: visible;
+}
+.line{
+    width: 100%;
+    height: 7px;
+    background-color:blue;
+    border-bottom: 5px solid yellow;
+    margin-top: 3em;
+}
+.social{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+.social img{
+    width: 3em;
+    cursor: pointer;
+}
+.scan{
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed; 
+    top: 0;
+    z-index: 10000;
+}
+.wopen{
+    display: block;
+}
+
+
+
+
+
+
+@media screen and (max-width: 984px) {
+    .cert-div{
+        width: 100%;
+        /* height: 20em; */
+    }
+    .scroll{
+        width: 100%;
+    }
+    .zoom{
+        width: 100%;
+        height: 13em;
+    }
+    .frame{
+        width: 100%;
+    }
+    .logo{
+        width: 6em;
+    }
+    .text{
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 820px) {
+    .link{
+       font-size: 12px;
+    }
+    .me{
+        width: 33%;
+        top: 0;
+        margin-top: 4em;
+        margin-right: 1em;
+    }
+    .cert-div{
+        width: 30em;
+    }
+    .zoom{
+        width: 18em;
+    }
+    .scroll{
+        height: 25em;
+    }
+    .popup img{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .link{
+        display: contents;
+        font-size: 16px;
+    }
+    .box{
+        display: contents;
+    }
+    .link li{
+        padding: 1em;
+    }
+    .me{
+        width: 20em;
+        top: 0;
+        margin-top: 1em;
+        margin-right: 1em;
+    }
+    .first{
+        width: 100%;
+    }
+    .section{
+        width: 100%;
+        margin-top: 5em;
+    }
+    .words{
+        z-index: 100;
+    }
+    .around{
+        width: 100%;
+        height: 100%;
+    }
+    .part{
+        font-size: 14px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .me{
+        width: 15em;
+        margin-top: 5em;
+    }
+    .logo{
+        width: 4em;
+    }
+    .text{
+        font-size: 1.5em;
+    }
+    .cv-img{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .container{
+        display: contents;
+    }
+    .around{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+}
+@media screen and (max-width: 350px){
+    .link{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .link li{
+        padding: 0;
+        font-size: 13px;
+    }
+    .me{
+        position: relative;
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .section{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 357px){
+    .pro button{
+        width: 48%;
+    }
+}
+@media screen and (max-width: 264px){
+    .me{
+        width: 100%;
+    }
+}
